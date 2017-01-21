@@ -14,12 +14,12 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    
+
         <ImageView
             android:id="@+id/userPic"
             android:layout_gravity="center_horizontal"
-            android:layout_width="150dp"
-            android:layout_height="150dp" />
+            android:layout_width="300dp"
+            android:layout_height="300dp" />
 
         <Button
             android:id="@+id/uploadPic"
@@ -38,7 +38,7 @@
             android:id="@+id/name"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:hint="Name / Nombre"
+            android:hint="First Name / Nombre"
             android:singleLine="true"
             android:fontFamily="sans-serif" />
 
@@ -51,9 +51,28 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="27dp"
-            android:id="@+id/editText5"
+            android:id="@+id/apellido"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:text="Last Name / Apellido"
+            android:singleLine="true"
+            android:fontFamily="sans-serif" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/tools"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp"
+            android:id="@+id/userName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="User Name / Nombre de Usuario"
+            android:singleLine="true"
+            android:fontFamily="sans-serif" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -91,7 +110,7 @@
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/skills"
-            android:layout_alignBottom="@+id/editText5"
+            android:layout_alignBottom="@+id/apellido"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginBottom="12dp"

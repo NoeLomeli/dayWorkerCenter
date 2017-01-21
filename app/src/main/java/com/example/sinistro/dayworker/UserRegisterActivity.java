@@ -28,7 +28,8 @@ public class UserRegisterActivity extends AppCompatActivity implements View.OnCl
         imagen.setOnClickListener(this);
         upload.setOnClickListener(this);
 
-        final EditText name = (EditText)findViewById(R.id.name);
+        final EditText fName = (EditText)findViewById(R.id.name);
+        final EditText lName = (EditText)findViewById(R.id.apellido);
         final EditText tools = (EditText)findViewById(R.id.tools);
         final EditText skills = (EditText)findViewById(R.id.skills);
         final EditText location = (EditText)findViewById(R.id.location);

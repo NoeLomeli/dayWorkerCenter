@@ -18,11 +18,11 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/name"
+        android:id="@+id/userName"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="Name / Nombre" />
+        android:hint="User Name / Nombre de Usuario" />
 
     <EditText
         android:layout_width="wrap_content"
