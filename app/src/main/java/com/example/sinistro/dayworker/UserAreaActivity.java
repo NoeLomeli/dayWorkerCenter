@@ -11,7 +11,7 @@ public class UserAreaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_area);
-        final EditText name = (EditText)findViewById(R.id.name);
+        final EditText name = (EditText)findViewById(R.id.usernameEntry);
         final TextView welcome = (TextView)findViewById(R.id.bienvenido);
     }
 }

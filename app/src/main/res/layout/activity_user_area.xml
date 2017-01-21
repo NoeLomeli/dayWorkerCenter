@@ -41,12 +41,12 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="15dp"
-        android:id="@+id/name" />
+        android:id="@+id/usernameEntry" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/name"
+        android:layout_below="@+id/usernameEntry"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="15dp" />
