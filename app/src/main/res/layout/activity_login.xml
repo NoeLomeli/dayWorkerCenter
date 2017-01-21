@@ -12,18 +12,6 @@
     tools:context="com.example.sinistro.dayworker.LoginActivity">
 
 
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:id="@+id/name"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:hint="Name / Nombre" />
-
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,21 +26,6 @@
         android:layout_alignParentEnd="true"
         android:hint="Password / Clave" />
 
-    <Button
-        android:text="Entrar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:id="@+id/entrar"
-        android:layout_below="@+id/password"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textStyle="normal|bold"
-        android:fontFamily="serif"
-        android:textSize="24sp" />
-
     <TextView
         android:text="Registre Aqui"
         android:layout_width="wrap_content"
@@ -60,4 +33,28 @@
         android:layout_below="@+id/entrar"
         android:layout_centerHorizontal="true"
         android:id="@+id/register" />
+
+    <Button
+        android:text="Entrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:id="@+id/entrar"
+        android:textStyle="normal|bold"
+        android:fontFamily="serif"
+        android:textSize="24sp"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/usernameEntry"
+        android:hint="Cuenta / Account"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

@@ -10,12 +10,13 @@ import android.widget.TextView;
 
 public class LoginActivity extends AppCompatActivity {
 
+    EditText nameET, passwordET;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        final EditText name = (EditText)findViewById(R.id.name);
-        final EditText password = (EditText)findViewById(R.id.password);
+        nameET = (EditText)findViewById(R.id.usernameEntry);
+        passwordET = (EditText)findViewById(R.id.password);
         final Button entrar = (Button) findViewById(R.id.entrar);
         final TextView register = (TextView)findViewById(R.id.register);
 
@@ -24,9 +25,23 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
               Intent registrarInt = new Intent(LoginActivity.this, UserRegisterActivity.class);
               LoginActivity.this.startActivity(registrarInt);
-
             }
         });
 
+        entrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onLogin();
+            }
+        });
+
+    }
+
+    public void onLogin(){
+        String username = nameET.getText().toString();
+        String password = passwordET.getText().toString();
+        String type = "login";
+        BackgroundWorker backgroundWorker = new BackgroundWorker(this);
+        backgroundWorker.execute(type, username, password); // We can pass multiple arguements here
     }
 }
