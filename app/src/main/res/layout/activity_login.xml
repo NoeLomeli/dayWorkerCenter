@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
@@ -9,6 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ff9933"
     tools:context="com.example.sinistro.dayworker.LoginActivity">
 
 
@@ -18,13 +20,14 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:id="@+id/phone"
+        android:id="@+id/userNameEntry"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:hint="User Name / Nombre de Usuario"
+        android:hint="User Name"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -38,21 +41,33 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:hint="Password / Clave" />
+        android:hint="Password"
+        android:textAlignment="center" />
 
     <TextView
-        android:text="Registrese Aqui"
+        android:text="Create New Account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/entrar"
         android:layout_centerHorizontal="true"
         android:id="@+id/register" />
 
-    <Button
-        android:text="Enter / Entre"
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
+        app:srcCompat="@drawable/daysign"
+        android:layout_marginTop="13dp"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/register"
+        android:fadingEdge="horizontal|vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
         android:id="@+id/entrar"
         android:textStyle="normal|bold"
         android:fontFamily="serif"

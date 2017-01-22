@@ -13,6 +13,6 @@ public class Hire extends AppCompatActivity {
 
         final EditText fullName = (EditText)findViewById(R.id.usernameEntry);
         final EditText email = (EditText)findViewById(R.id.email);
-        final EditText phone = (EditText)findViewById(R.id.phone);
+        final EditText phone = (EditText)findViewById(R.id.userNameEntry);
     }
 }

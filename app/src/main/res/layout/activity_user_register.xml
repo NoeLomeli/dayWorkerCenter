@@ -9,6 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ff9933"
     tools:context="com.example.sinistro.dayworker.UserRegisterActivity">
 
     <LinearLayout
@@ -22,14 +23,13 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="300dp"
             android:layout_height="234dp"
-            app:srcCompat="@android:drawable/editbox_dropdown_light_frame"
-            android:background="@android:drawable/editbox_dropdown_light_frame"
+            app:srcCompat="@mipmap/ic_launcher"
             android:cropToPadding="true"
             android:adjustViewBounds="true" />
 
         <Button
             android:id="@+id/uploadPic"
-            android:text="Upload Image / Subir Foto"
+            android:text="Upload Image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -44,9 +44,10 @@
             android:id="@+id/usernameEntry"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:hint="First Name / Nombre"
+            android:hint="First Name"
             android:singleLine="true"
-            android:fontFamily="sans-serif" />
+            android:fontFamily="sans-serif"
+            android:textAlignment="center" />
 
         <EditText
             android:layout_width="match_parent"
@@ -62,7 +63,8 @@
             android:layout_alignParentEnd="true"
             android:singleLine="true"
             android:fontFamily="sans-serif"
-            android:hint="Last Name / Apellido" />
+            android:hint="Last Name"
+            android:textAlignment="center" />
 
         <EditText
             android:layout_width="match_parent"
@@ -73,12 +75,13 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="27dp"
-            android:id="@+id/phone"
+            android:id="@+id/userNameEntry"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:singleLine="true"
             android:fontFamily="sans-serif"
-            android:hint="User Name / Nombre de Usuario" />
+            android:hint="User Name"
+            android:textAlignment="center" />
 
         <EditText
             android:layout_width="match_parent"
@@ -92,8 +95,9 @@
             android:id="@+id/location"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:hint="Location / Locacion"
-            android:singleLine="true" />
+            android:hint="Where Do You Live?"
+            android:singleLine="true"
+            android:textAlignment="center" />
 
         <EditText
             android:layout_width="match_parent"
@@ -107,8 +111,9 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:hint="Tools / Herramientas"
-            android:singleLine="false" />
+            android:hint="Tools"
+            android:singleLine="false"
+            android:textAlignment="center" />
 
         <EditText
             android:layout_width="match_parent"
@@ -120,9 +125,10 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginBottom="12dp"
-            android:hint="Skills / Abilidades"
+            android:hint="Skills"
             android:singleLine="false"
-            android:layout_weight="0.13" />
+            android:layout_weight="0.13"
+            android:textAlignment="center" />
 
         <EditText
             android:layout_width="match_parent"
@@ -132,13 +138,14 @@
             android:layout_below="@+id/location"
             android:layout_marginTop="15dp"
             android:id="@+id/transportation"
-            android:hint="Transportation / Transportacion"
+            android:hint="Transportation"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:singleLine="true"
-            android:layout_weight="0.13" />
+            android:layout_weight="0.20"
+            android:textAlignment="center" />
 
         <EditText
             android:layout_width="match_parent"
@@ -152,8 +159,9 @@
             android:id="@+id/password"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:hint="Password / Clave"
-            android:layout_weight="0.13" />
+            android:hint="Password"
+            android:layout_weight="0.13"
+            android:textAlignment="center" />
 
         <Button
             android:text="Register / Registrar"
