@@ -13,6 +13,18 @@
     tools:context="com.example.sinistro.dayworker.MainActivity">
 
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/findWork"
+        android:text="Find Work"
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_below="@+id/dwcButton"
+        android:layout_alignLeft="@+id/dwcButton"
+        android:layout_alignStart="@+id/dwcButton"
+        android:layout_alignRight="@+id/dwcButton"
+        android:layout_alignEnd="@+id/dwcButton"
+        android:textSize="24sp" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -23,36 +35,40 @@
         android:layout_centerHorizontal="true" />
 
     <Button
+        android:text="Hire a Worker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/dwcButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="23dp"
-        android:id="@+id/findWork"
-        android:text="Find Work"
-        style="@android:style/Widget.Holo.Light.Button" />
-
-    <Button
-        android:text="Hire Worker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:id="@+id/findEmp"
-        android:layout_below="@+id/findWork"
-        android:layout_centerHorizontal="true"
         android:textAppearance="@style/TextAppearance.AppCompat"
-        style="@android:style/Widget.Holo.Light.Button" />
+        style="@android:style/Widget.Holo.Light.Button"
+        android:layout_below="@+id/findWork"
+        android:layout_alignLeft="@+id/findWork"
+        android:layout_alignStart="@+id/findWork"
+        android:layout_alignRight="@+id/findWork"
+        android:layout_alignEnd="@+id/findWork"
+        android:textSize="24sp" />
 
     <Button
-        android:text="More Options"
+        android:text="Resources"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
         android:id="@+id/moreOptions"
         style="@android:style/Widget.Holo.Light.Button"
+        android:elevation="0dp"
         android:layout_below="@+id/findEmp"
-        android:layout_centerHorizontal="true"
-        android:elevation="0dp" />
+        android:layout_alignLeft="@+id/findEmp"
+        android:layout_alignStart="@+id/findEmp"
+        android:layout_alignRight="@+id/findEmp"
+        android:layout_alignEnd="@+id/findEmp"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hours"
+        android:id="@+id/imageView4"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

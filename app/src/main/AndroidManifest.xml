@@ -21,7 +21,8 @@
         <activity android:name=".UserRegisterActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".Hire" />
-        <activity android:name=".Mission"></activity>
+        <activity android:name=".Mission" />
+        <activity android:name=".Resources"></activity>
     </application>
 
 </manifest>

@@ -41,6 +41,13 @@ public class MainActivity extends AppCompatActivity  {
                 MainActivity.this.startActivity(missionInt);
             }
         });
+        final Button resources = (Button) findViewById(R.id.moreOptions);
+        resources.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent resourceInt = new Intent(MainActivity.this, Resources.class);
+                MainActivity.this.startActivity(resourceInt);
+            }
+        });
 
     }
 
