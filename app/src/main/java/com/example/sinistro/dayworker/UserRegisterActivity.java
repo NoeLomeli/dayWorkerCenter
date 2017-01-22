@@ -33,7 +33,7 @@ public class UserRegisterActivity extends AppCompatActivity implements View.OnCl
 
 
         final EditText fName = (EditText)findViewById(R.id.usernameEntry);
-        final EditText lName = (EditText)findViewById(R.id.apellido);
+        final EditText lName = (EditText)findViewById(R.id.email);
         final EditText name = (EditText)findViewById(R.id.usernameEntry);
         final EditText tools = (EditText)findViewById(R.id.tools);
         final EditText skills = (EditText)findViewById(R.id.skills);

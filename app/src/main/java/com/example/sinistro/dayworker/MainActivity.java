@@ -24,6 +24,15 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
 
+        final Button hire = (Button)findViewById(R.id.findEmp);
+
+        hire.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v) {
+                Intent hireInt = new Intent(MainActivity.this, Hire.class);
+                MainActivity.this.startActivity(hireInt);
+            }
+        });
+
     }
 
 

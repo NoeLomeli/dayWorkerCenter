@@ -7,8 +7,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Day Worker Center"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -20,7 +19,8 @@
         </activity>
         <activity android:name=".UserAreaActivity" />
         <activity android:name=".UserRegisterActivity" />
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Hire"></activity>
     </application>
 
 </manifest>
