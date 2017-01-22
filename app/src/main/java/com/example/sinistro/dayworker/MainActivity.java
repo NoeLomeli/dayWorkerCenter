@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity  {
 
         login.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
-                Intent findInt = new Intent(MainActivity.this, UserRegisterActivity.class);
+                Intent findInt = new Intent(MainActivity.this, LoginActivity.class);
                 MainActivity.this.startActivity(findInt);
             }
         });
