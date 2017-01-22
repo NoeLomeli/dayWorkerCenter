@@ -9,6 +9,7 @@
         android:allowBackup="true"
         android:label="Day Worker Center"
         android:supportsRtl="true"
+        android:icon="@drawable/dwc"
         android:theme="@style/AppTheme">
 
         <activity android:name=".MainActivity">
