@@ -1,6 +1,7 @@
 package com.example.sinistro.dayworker;
 
 import android.content.Intent;
+import android.icu.text.SimpleDateFormat;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
@@ -12,12 +13,16 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.util.Date;
+import java.util.Locale;
+
 public class UserRegisterActivity extends AppCompatActivity implements View.OnClickListener{
     private static final int RESULT_PIC = 1;
 
     ImageView imagen;
     Button upload;
     private String full_name;
+    //private String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
     Button registerButton;
 
     @Override
@@ -58,6 +63,8 @@ public class UserRegisterActivity extends AppCompatActivity implements View.OnCl
                 sendData();
                 break;
             case R.id.uploadPic:
+                Intent bGalleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+                startActivityForResult(bGalleryIntent, RESULT_PIC);
                 break;
         }
 

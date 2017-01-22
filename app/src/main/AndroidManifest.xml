@@ -20,7 +20,8 @@
         <activity android:name=".UserAreaActivity" />
         <activity android:name=".UserRegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".Hire"></activity>
+        <activity android:name=".Hire" />
+        <activity android:name=".Mission"></activity>
     </application>
 
 </manifest>
