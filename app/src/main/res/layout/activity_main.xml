@@ -24,7 +24,10 @@
         android:layout_alignStart="@+id/dwcButton"
         android:layout_alignRight="@+id/dwcButton"
         android:layout_alignEnd="@+id/dwcButton"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light"
+        android:fontFamily="sans-serif"
+        android:elevation="0dp" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -46,7 +49,8 @@
         android:layout_alignStart="@+id/findWork"
         android:layout_alignRight="@+id/findWork"
         android:layout_alignEnd="@+id/findWork"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light" />
 
     <Button
         android:text="Resources"
@@ -60,7 +64,8 @@
         android:layout_alignStart="@+id/findEmp"
         android:layout_alignRight="@+id/findEmp"
         android:layout_alignEnd="@+id/findEmp"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:textColor="@android:color/background_light" />
 
     <ImageView
         android:layout_width="wrap_content"
