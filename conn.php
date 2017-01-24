@@ -4,10 +4,8 @@ $mysql_username = "root";
 $mysql_password = "";
 $mysql_server_name = "localhost";
 $conn = mysqli_connect($mysql_server_name, $mysql_username, $mysql_password, $db_name);
-if($conn){
-	echo "Connection Success!" . "<br>";
+if(!$conn){
+	echo "Connection Failed!" . "<br>" . "Check your internet connection.";
 }
-else{
-	echo "Connection not successful";
-}
+
 ?>

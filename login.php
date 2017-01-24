@@ -8,7 +8,7 @@ $mysql_qry = "select * from profiles
 	and password like '$user_pass'";
 $result = mysqli_query($conn, $mysql_qry);
 if(mysqli_num_rows($result)){
-	echo "Login Success!";
+	echo "Login Success!" . "<br>";
 }
 else{
 	echo "Login failed" . "<br>";
